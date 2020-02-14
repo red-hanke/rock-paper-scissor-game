@@ -5,7 +5,8 @@ user = None
 computer = random.choice(['rock','paper','scissor'])
 
 while user == None:
-    user = input('please enter the value you wish to choose:')
+    print("Rock, Paper, or Scissors?")
+    user = input('please enter the value: ').lower()
     if user not in ['rock','paper','scissor']:
         print('You need to choose valid value')
         user = None
